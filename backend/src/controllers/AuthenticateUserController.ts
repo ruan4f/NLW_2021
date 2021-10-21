@@ -8,3 +8,5 @@ class AuthenticateUserController {
     const result = service.execute(code);
   }
 }
+
+export { AuthenticateUserController }
