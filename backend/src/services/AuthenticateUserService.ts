@@ -43,7 +43,13 @@ class AuthenticateUserService {
 
     const { login, id, avatar_url, name } = response.data;
 
-    const user = await primaClient.user;
+    const user = await primaClient.user.findFirst({
+      where: {
+        github_id: id
+      }
+    });
+
+
 
     return response.data;
   }
