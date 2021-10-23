@@ -1,4 +1,5 @@
 import axios from "axios";
+import primaClient from "../prisma";
 /**
  * Receber code(string)
  * Recuperar o access_token no github
@@ -39,6 +40,10 @@ class AuthenticateUserService {
         authorization: `Bearer ${accessTokenResponse.access_token}`
       }
     });
+
+    const { login, id, avatar_url, name } = response.data;
+
+    const user = await primaClient.user;
 
     return response.data;
   }
