@@ -13,7 +13,6 @@ export function ensureAuthenticated(request: Request, response: Response, next: 
   }
 
   //Bearer token
-
   const [, token] = authToken.split(" ");
 
   try {
