@@ -1,0 +1,8 @@
+Executar a criação da base de dados da aplicação
+yarn prisma migrate dev
+
+Visualizar os dados da base de dados de maneira gráfica
+yarn prisma studio
+
+Executar a aplicação
+yarn dev
