@@ -1,3 +1,4 @@
+import { VscGithubInverted } from 'react-icons/vsc';
 import styles from './styles.module.scss';
 
 export function LoginBox() {
