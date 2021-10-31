@@ -4,7 +4,9 @@ export function LoginBox() {
   return (
     <div className={styles.contentWrapper}>
       <strong>Entre e compartilhe sua mensagem</strong>
-      <a href="#" className={styles.signInWithgithub}></a>
+      <a href="#" className={styles.signInWithgithub}>
+        Entrar com Github
+      </a>
     </ div>
   )
 }
