@@ -11,6 +11,10 @@ export function MessageList() {
         <li className={styles.message}>
           <p className={styles.messageContent}>Não vejo a hora de começar esse evento, com certeza vai ser o melhor de todos!</p>
           <div className={styles.messageUser}>
+            <div className={styles.userImage}>
+              <img src="https://github.com/diego3g.png" alt="Diego Fernandes" />
+            </div>
+            <span>Diego fernandes</span>
 
           </div>
         </li>
